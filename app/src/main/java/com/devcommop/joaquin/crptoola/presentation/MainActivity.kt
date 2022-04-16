@@ -1,4 +1,4 @@
-package com.devcommop.joaquin.crptoola
+package com.devcommop.joaquin.crptoola.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.devcommop.joaquin.crptoola.ui.theme.CrptoolaTheme
+import com.devcommop.joaquin.crptoola.presentation.ui.theme.CrptoolaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+
                 }
             }
         }

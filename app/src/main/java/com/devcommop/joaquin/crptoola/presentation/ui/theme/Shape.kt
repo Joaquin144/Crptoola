@@ -1,4 +1,4 @@
-package com.devcommop.joaquin.crptoola.ui.theme
+package com.devcommop.joaquin.crptoola.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

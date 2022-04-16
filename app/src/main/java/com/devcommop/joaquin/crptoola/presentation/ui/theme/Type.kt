@@ -1,4 +1,4 @@
-package com.devcommop.joaquin.crptoola.ui.theme
+package com.devcommop.joaquin.crptoola.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
