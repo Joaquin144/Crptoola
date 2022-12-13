@@ -17,7 +17,7 @@ class GetCoinUseCase @Inject constructor(
     operator fun invoke(coinId: String) : Flow<Resource<CoinDetail>> = flow {
         try{
             emit(Resource.Loading<CoinDetail>())
-            val coin = repository.getCoinById(coinId).toCoinDetail()//E! => why this : yeh toh khaali hai 😑
+            val coin = repository.getCoinById(coinId).toCoinDetail()//Ques => why this : yeh toh khaali hai 😑//Ans:-- ye khali nahi ye interface hai jo ki actual implementation ko wrap kar raha hai.
             emit(Resource.Success<CoinDetail>(coin))
         }catch (e: HttpException){//response of server isn't a success (success => codestarts with 2)
             emit(Resource.Error<CoinDetail>(e.localizedMessage ?: "An unexpected error occurred"))
