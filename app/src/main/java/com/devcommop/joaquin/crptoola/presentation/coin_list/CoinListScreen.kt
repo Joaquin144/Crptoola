@@ -32,7 +32,7 @@ fun CoinListScreen(
                 CoinListItem(
                     coin = coin,
                     onItemClick = {
-                        navController.navigate(Screen.CoinDetailScreen.route + "/${coin.id}")//E! this line of code
+                        navController.navigate(Screen.CoinDetailScreen.route + "/${coin.id}")//E! this line of code  --> Compose nav
                     }
                 )
             }

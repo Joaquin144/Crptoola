@@ -26,7 +26,7 @@ class CoinDetailViewModel @Inject constructor(
     ans:-- because we just want to ensure composables don't accidentally chnage it. As presentation layer is dumb about domain layer. Its just a precaution and not some hard and fast rule
      */
 
-    init{
+    init{//The below line is automatically taking in arguments that were passed while compose navigation, since those arguments get passed in savedStateHandle. E! --> Is this cause of coupling bw VM and ui ?
         savedStateHandle.get<String>(PARAM_COIN_ID)?.let{ coinId ->
             getCoin(coinId = coinId)
         }
